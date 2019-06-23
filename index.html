@@ -10,16 +10,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<title>not interesting</title>
-		<style type="text/css"> 
-			.drophover:hover > .dropdown-menu{ 
-			display: block; 
-			margin: 0; 
-			} 
-		</style> 
+		<script>
+			var price = [1050, 12, 45, 678, 99, 34, 67, 238, 90, 780, 32, 457];
+			k = 0
+		</script>	
   </head>
   <body>
 	<nav class="navbar navbar-light bg-light navbar-expand-md">
 		<a href="my portfolio.html" class="navbar-brand">Main page</a>
+		<a href="cart.html" class="navbar-brand">Cart</a>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav">
 				<li class="navbar-item">
@@ -36,13 +35,28 @@
 		</ol>
 	</nav>
 	<div class="container">
+		<form> 
+			Choose goods for <input id="a" type="number" min="1"> $ <a href="#" class="btn btn-secondary bg-info"  data-placement="top" title="tap here!">Ok</a>
+		</form> 
+		<br>
+		<p><span style="font-weight:lighter;"><strong>Sort price by</strong>
+	   <select name="sorting">
+		    <option value="s1">increase</option>
+		    <option value="s2" selected>decrease</option>
+	   </select> 
+	</span>
+	</p>
 		<div class="row">
 			<div class="col-sm-6 col-lg-3">
 				<div class="card">
 				<img class="card-img-top" alt="Card header image" src="dog.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Swimming pool</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[0],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -52,16 +66,20 @@
 				<img class="card-img-top" alt="Card header image" src="air.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Humidifier</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[1],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						  <div class="modal-dialog" role="document">
 							<div class="modal-content">
 							  <div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Thanks for coming!</h4>		
+									<h4 class="modal-title" id="myModalLabel">Thanks for choosing us!</h4>		
 								</div>
 							  <div class="modal-body">
-								Sorry, I don't have another pictures yet :c
+								Add to cart!
 							  </div>
 							  <div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -77,7 +95,11 @@
 				<img class="card-img-top" alt="Card header image" src="hair.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Fashionable hairpin</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[2],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal"" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -87,7 +109,11 @@
 				<img class="card-img-top" alt="Card header image" src="helicopter.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Mini fan</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[3],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -102,7 +128,11 @@
 				<img class="card-img-top" alt="Card header image" src="pack.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Bottle packaging</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[4],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -112,23 +142,13 @@
 				<img class="card-img-top" alt="Card header image" src="neckles.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Necklace</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[5],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Thanks for coming!</h4>		
-								</div>
-							  <div class="modal-body">
-								Sorry, I don't have another pictures yet :c
-							  </div>
-							  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							  </div>
-							</div>
-						  </div>
-						</div>
+						
 					</div>
 				</div>		
 			</div>
@@ -137,7 +157,11 @@
 				<img class="card-img-top" alt="Card header image" src="accesories.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Сolored hairpins</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[6],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal"" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -147,7 +171,11 @@
 				<img class="card-img-top" alt="Card header image" src="glasses.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Spectacle frame</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[7],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -162,7 +190,11 @@
 				<img class="card-img-top" alt="Card header image" src="shose.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Sandals</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[8],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -172,23 +204,13 @@
 				<img class="card-img-top" alt="Card header image" src="summershoes.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Summer sandals</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[9],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
-						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						  <div class="modal-dialog" role="document">
-							<div class="modal-content">
-							  <div class="modal-header">
-									<h4 class="modal-title" id="myModalLabel">Thanks for coming!</h4>		
-								</div>
-							  <div class="modal-body">
-								Sorry, I don't have another pictures yet :c
-							  </div>
-							  <div class="modal-footer">
-								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							  </div>
-							</div>
-						  </div>
-						</div>
+						
 					</div>
 				</div>		
 			</div>
@@ -197,7 +219,11 @@
 				<img class="card-img-top" alt="Card header image" src="fry.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Grill</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[10],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal"" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
@@ -207,7 +233,11 @@
 				<img class="card-img-top" alt="Card header image" src="hats.jpg">
 					<div class="card-body">
 						<h5 class="card-title">Cap</h5>
-						<p class="card-text">An awesome product</p>
+						<p class="card-text">
+							<script>
+								document.write(price[11],"$");
+							</script>
+						</p>
 						<a href="#" class="btn btn-secondary bg-info" data-toggle="modal" data-target="#myModal" data-placement="top" title="tap here!">Buy</a>
 					</div>
 				</div>		
