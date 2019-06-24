@@ -1,0 +1,19 @@
+{
+	"name": "bestAppStoreChina",
+	"description": "Simple Store",
+	"version": "0.0.1",
+	"private": true,
+	"license": "MIT",
+	"author": "Team AISD CYC",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies" :
+	{
+		"sqlite3" : "latest",
+		"express" : "latest",
+		"multer" : "latest",
+		"body-parser" : "latest"
+	}
+
+}

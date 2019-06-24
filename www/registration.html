@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<meta charset="utf-8" />
+		<title>Upload images to server using Node JS</title>
+</head>
+<body>
+
+	<form id="frmUploader" enctype="multipart/form-data" action="api/put/" method="post" style="padding-left: 30%; font-size: 30pt;">
+		<br><br><br><br><br>
+		<div>Великолепная форма</div>
+		Название<input type="text" name="name" > 
+		<br><br>
+		Цена<input type="number" name="price" >
+		<br><br>
+		Картинка<input type="file" name="itemimage">
+		<br><br>
+		<input type="submit" name="submit" id="btnSubmit" value="Upload">
+	</form>
+</body>
+</html>
